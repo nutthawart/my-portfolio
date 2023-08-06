@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nartthawat - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Nartthawat Chomchoochuen</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Nartthawat C.</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="nartthawat pfp" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1" id="greetingParagraph"></p>
+        <h1 class="title gradient-text">Nartthawat Chomchoochuen</h1>
+        <p class="section__text__p2">
+          <span class="typed-text"></span><span class="cursor">&nbsp;</span>
+        </p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/nartthawat-resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/facebook.png"
+            alt="My Facebook profile"
+            class="icon"
+            onclick="location.href='https://www.facebook.com/profile.php?id=100028965739894'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/nutthawart'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Delve into the story</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img src="./assets/guy.png" alt="Guy icon" class="icon" />
+              <h3>Personal Information</h3>
+              <p>
+                Nakhon Pathom, Thailand.<br />Studying in Grade 11
+                (Sci-Math).<br />DOB August 12, 2007.<br />Love listening to
+                music and playing video games.
+              </p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>
+                2022-Present Nawaminthrachinuthit Satriwitthaya Phutthamonthon
+                School<br />2019-2022 Kanchanapisek Wittayalai Nakhon Pathom
+                School<br />2009-2019 Kasintorn Saint Peter School
+              </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I see a huge perspective in the computer field. Technology keeps
+              growing, with robotics and AI taking the spotlight in recent
+              years. But I think we are far from the end, and the demand for
+              motivated computer engineering will only continue to grow. This
+              cannot be said about many other jobs with uncertain future. Robots
+              will replace humans in certain professions, However, this won't be
+              true for the people who create and program these robots. And
+              that's the side of the barricade where I'd like to stand once I
+              finish the university. The degree in computer engineering is an
+              important step on this journey.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Technical Skills</h2>
+            <div class="article-container">
+              <article>
+                <!-- แถวแรก -->
+                <img
+                  src="./assets/HTML5.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/CSS3.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/JS.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+
+              <article>
+                <!-- แถวสอง -->
+                <img
+                  src="./assets/logoC.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/logoCplus.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C++</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/logoCsharp.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C#</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+
+              <article>
+                <!-- แถวสาม -->
+                <img
+                  src="./assets/Python.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/Lua.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Lua</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Professional Skills</h2>
+            <div class="article-container">
+              <article>
+                <!-- แถวแรก -->
+                <img
+                  src="./assets/Time.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Time Management</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/Speak.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Communication skills</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/Teamwork.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Teamwork skills</h3>
+                </div>
+              </article>
+
+              <article>
+                <!-- แถวสอง -->
+                <img
+                  src="./assets/Problem.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Problem-Solving Skills</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/Adapt.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Adaptability and Flexibility</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/Creative.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Creativity</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:earthkungcee@hotmail.com"
+              >earthkungcee@hotmail.com</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div id="socials-container">
+        <img
+          src="./assets/facebook.png"
+          alt="My Facebook Profile"
+          class="icon"
+          onclick="location.href='https://www.facebook.com/profile.php?id=100028965739894'"
+        />
+        <img
+          src="./assets/github.png"
+          alt="My Github Profile"
+          class="icon"
+          onclick="location.href='https://github.com/nutthawart'"
+        />
+        <img
+          src="./assets/Instagram.png"
+          alt="My Instagram Profile"
+          class="icon"
+          onclick="location.href='https://www.instagram.com/nutthawart/'"
+        />
+        <img
+          src="./assets/reddit.png"
+          alt="My Reddit Profile"
+          class="icon"
+          onclick="location.href='https://www.reddit.com/user/Nartthawat3c'"
+        />
+        <img
+          src="./assets/twitter.png"
+          alt="My Twitter Profile"
+          class="icon"
+          onclick="location.href='https://twitter.com/nutthawart'"
+        />
+        <img
+          src="./assets/youtube.png"
+          alt="My Youtube Profile"
+          class="icon"
+          onclick="location.href='https://www.youtube.com/channel/UCsehY67J5lBtXQr4IBiQrAQ'"
+        />
+      </div>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <!-- <li><a href="#projects">Projects</a></li> -->
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>
+        Copyright &#169; 2023 Nartthawat Chomchoochuen. All Rights Reserved.
+      </p>
+    </footer>
+    <script src="menuscript.js"></script>
+    <script src="timescript.js"></script>
+  </body>
+</html>
